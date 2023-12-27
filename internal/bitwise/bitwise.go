@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package bitwise ;import (_c "encoding/binary";_d "errors";_e "fmt";_dd "github.com/unidoc/unipdf/v3/common";_fe "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_f "io";);func (_ef *BufferedWriter )SkipBits (skip int )error {if skip ==0{return nil ;
+package bitwise ;import (_c "encoding/binary";_d "errors";_e "fmt";_dd "github.com/ifanfairuz/unipdf/v3/common";_fe "github.com/ifanfairuz/unipdf/v3/internal/jbig2/errors";_f "io";);func (_ef *BufferedWriter )SkipBits (skip int )error {if skip ==0{return nil ;
 };_eb :=int (_ef ._a )+skip ;if _eb >=0&&_eb < 8{_ef ._a =uint8 (_eb );return nil ;};_eb =int (_ef ._a )+_ef ._bf *8+skip ;if _eb < 0{return _fe .Errorf ("\u0057r\u0069t\u0065\u0072\u002e\u0053\u006b\u0069\u0070\u0042\u0069\u0074\u0073","\u0069n\u0064e\u0078\u0020\u006f\u0075\u0074 \u006f\u0066 \u0072\u0061\u006e\u0067\u0065");
 };_ee :=_eb /8;_cbg :=_eb %8;_ef ._a =uint8 (_cbg );if _gb :=_ee -_ef ._bf ;_gb > 0&&len (_ef ._ec )-1< _ee {if _ef ._a !=0{_gb ++;};_ef .expandIfNeeded (_gb );};_ef ._bf =_ee ;return nil ;};func (_fdb *Reader )Length ()uint64 {return uint64 (_fdb ._efd ._fgc )};
 func (_cc *Reader )ReadBits (n byte )(_fbff uint64 ,_ffe error ){if n < _cc ._dff {_eag :=_cc ._dff -n ;_fbff =uint64 (_cc ._ga >>_eag );_cc ._ga &=1<<_eag -1;_cc ._dff =_eag ;return _fbff ,nil ;};if n > _cc ._dff {if _cc ._dff > 0{_fbff =uint64 (_cc ._ga );

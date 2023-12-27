@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package cmap ;import (_gc "bufio";_e "bytes";_g "encoding/hex";_f "errors";_b "fmt";_df "github.com/unidoc/unipdf/v3/common";_ge "github.com/unidoc/unipdf/v3/core";_fb "github.com/unidoc/unipdf/v3/internal/cmap/bcmaps";_c "io";_af "sort";_bd "strconv";
+package cmap ;import (_gc "bufio";_e "bytes";_g "encoding/hex";_f "errors";_b "fmt";_df "github.com/ifanfairuz/unipdf/v3/common";_ge "github.com/ifanfairuz/unipdf/v3/core";_fb "github.com/ifanfairuz/unipdf/v3/internal/cmap/bcmaps";_c "io";_af "sort";_bd "strconv";
 _gf "strings";_a "unicode/utf16";);type CIDSystemInfo struct{Registry string ;Ordering string ;Supplement int ;};func (_gaad *cMapParser )parseOperand ()(cmapOperand ,error ){_bfba :=cmapOperand {};_bgc :=_e .Buffer {};for {_fba ,_eccb :=_gaad ._cfg .Peek (1);
 if _eccb !=nil {if _eccb ==_c .EOF {break ;};return _bfba ,_eccb ;};if _ge .IsDelimiter (_fba [0]){break ;};if _ge .IsWhiteSpace (_fba [0]){break ;};_baac ,_ :=_gaad ._cfg .ReadByte ();_bgc .WriteByte (_baac );};if _bgc .Len ()==0{return _bfba ,_b .Errorf ("\u0069\u006e\u0076al\u0069\u0064\u0020\u006f\u0070\u0065\u0072\u0061\u006e\u0064\u0020\u0028\u0065\u006d\u0070\u0074\u0079\u0029");
 };_bfba .Operand =_bgc .String ();return _bfba ,nil ;};type charRange struct{_gfc CharCode ;_gd CharCode ;};func (cmap *CMap )Bytes ()[]byte {_df .Log .Trace ("\u0063\u006d\u0061\u0070.B\u0079\u0074\u0065\u0073\u003a\u0020\u0063\u006d\u0061\u0070\u003d\u0025\u0073",cmap .String ());

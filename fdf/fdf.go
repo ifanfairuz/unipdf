@@ -10,7 +10,7 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package fdf provides support for loading form field data from Form Field Data (FDF) files.
-package fdf ;import (_ad "bufio";_bb "bytes";_ac "encoding/hex";_a "errors";_ge "fmt";_f "github.com/unidoc/unipdf/v3/common";_da "github.com/unidoc/unipdf/v3/core";_ab "io";_c "os";_gg "regexp";_d "sort";_e "strconv";_b "strings";);
+package fdf ;import (_ad "bufio";_bb "bytes";_ac "encoding/hex";_a "errors";_ge "fmt";_f "github.com/ifanfairuz/unipdf/v3/common";_da "github.com/ifanfairuz/unipdf/v3/core";_ab "io";_c "os";_gg "regexp";_d "sort";_e "strconv";_b "strings";);
 
 // LoadFromPath loads FDF form data from file path `fdfPath`.
 func LoadFromPath (fdfPath string )(*Data ,error ){_ef ,_fe :=_c .Open (fdfPath );if _fe !=nil {return nil ,_fe ;};defer _ef .Close ();return Load (_ef );};func (_abfc *fdfParser )parseNumber ()(_da .PdfObject ,error ){return _da .ParseNumber (_abfc ._gbc )};

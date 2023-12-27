@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package imagerender ;import (_g "errors";_b "fmt";_cee "github.com/unidoc/freetype/raster";_gb "github.com/unidoc/unipdf/v3/common";_cc "github.com/unidoc/unipdf/v3/internal/transform";_ae "github.com/unidoc/unipdf/v3/render/internal/context";_f "golang.org/x/image/draw";
+package imagerender ;import (_g "errors";_b "fmt";_cee "github.com/unidoc/freetype/raster";_gb "github.com/ifanfairuz/unipdf/v3/common";_cc "github.com/ifanfairuz/unipdf/v3/internal/transform";_ae "github.com/ifanfairuz/unipdf/v3/render/internal/context";_f "golang.org/x/image/draw";
 _af "golang.org/x/image/font";_ab "golang.org/x/image/math/f64";_fd "golang.org/x/image/math/fixed";_da "image";_e "image/color";_ba "image/draw";_ce "math";_a "sort";_d "strings";);func (_fgf *Context )DrawStringAnchored (s string ,face _af .Face ,x ,y ,ax ,ay float64 ){_caaa ,_dga :=_fgf .MeasureString (s ,face );
 _fgf .drawString (s ,face ,x -ax *_caaa ,y +ay *_dga );};func (_fdc *Context )DrawRectangle (x ,y ,w ,h float64 ){_fdc .NewSubPath ();_fdc .MoveTo (x ,y );_fdc .LineTo (x +w ,y );_fdc .LineTo (x +w ,y +h );_fdc .LineTo (x ,y +h );_fdc .ClosePath ();};func (_gfge *Context )DrawEllipse (x ,y ,rx ,ry float64 ){_gfge .NewSubPath ();
 _gfge .DrawEllipticalArc (x ,y ,rx ,ry ,0,2*_ce .Pi );_gfge .ClosePath ();};type solidPattern struct{_afb _e .Color };func _aafd (_ceefe float64 ,_dcfc stops )_e .Color {if _ceefe <=0.0||len (_dcfc )==1{return _dcfc [0]._dec ;};_dfa :=_dcfc [len (_dcfc )-1];

@@ -20,8 +20,8 @@
 // be converted to a string for embedding in a PDF file.
 //
 // The contentstream package uses the core and model packages.
-package contentstream ;import (_a "bufio";_g "bytes";_bd "encoding/hex";_ba "errors";_fd "fmt";_gd "github.com/unidoc/unipdf/v3/common";_e "github.com/unidoc/unipdf/v3/core";_db "github.com/unidoc/unipdf/v3/internal/imageutil";_adb "github.com/unidoc/unipdf/v3/internal/transform";
-_gc "github.com/unidoc/unipdf/v3/model";_f "image/color";_fb "image/jpeg";_cf "io";_ad "math";_d "regexp";_c "strconv";);
+package contentstream ;import (_a "bufio";_g "bytes";_bd "encoding/hex";_ba "errors";_fd "fmt";_gd "github.com/ifanfairuz/unipdf/v3/common";_e "github.com/ifanfairuz/unipdf/v3/core";_db "github.com/ifanfairuz/unipdf/v3/internal/imageutil";_adb "github.com/ifanfairuz/unipdf/v3/internal/transform";
+_gc "github.com/ifanfairuz/unipdf/v3/model";_f "image/color";_fb "image/jpeg";_cf "io";_ad "math";_d "regexp";_c "strconv";);
 
 // Bytes converts the content stream operations to a content stream byte presentation, i.e. the kind that can be
 // stored as a PDF stream or string format.

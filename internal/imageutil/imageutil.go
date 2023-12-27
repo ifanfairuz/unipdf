@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package imageutil ;import (_ba "encoding/binary";_g "errors";_ge "fmt";_d "github.com/unidoc/unipdf/v3/common";_ff "github.com/unidoc/unipdf/v3/internal/bitwise";_ee "image";_b "image/color";_f "image/draw";_a "math";);var _ Image =&NRGBA64 {};type Gray8 struct{ImageBase };
+package imageutil ;import (_ba "encoding/binary";_g "errors";_ge "fmt";_d "github.com/ifanfairuz/unipdf/v3/common";_ff "github.com/ifanfairuz/unipdf/v3/internal/bitwise";_ee "image";_b "image/color";_f "image/draw";_a "math";);var _ Image =&NRGBA64 {};type Gray8 struct{ImageBase };
 func (_cgde *NRGBA64 )Set (x ,y int ,c _b .Color ){_aabe :=(y *_cgde .Width +x )*2;_gbdg :=_aabe *3;if _gbdg +5>=len (_cgde .Data ){return ;};_egeg :=_b .NRGBA64Model .Convert (c ).(_b .NRGBA64 );_cgde .setNRGBA64 (_gbdg ,_egeg ,_aabe );};func (_bafgd *RGBA32 )Copy ()Image {return &RGBA32 {ImageBase :_bafgd .copy ()}};
 func _becd (_edcf _ee .Image )(Image ,error ){if _bdfg ,_fee :=_edcf .(*RGBA32 );_fee {return _bdfg .Copy (),nil ;};_bfac ,_gdfd ,_adcge :=_feddd (_edcf ,1);_cbafd :=&RGBA32 {ImageBase :NewImageBase (_bfac .Max .X ,_bfac .Max .Y ,8,3,nil ,_adcge ,nil )};
 _fdfd (_edcf ,_cbafd ,_bfac );if len (_adcge )!=0&&!_gdfd {if _dcdaa :=_bddgc (_adcge ,_cbafd );_dcdaa !=nil {return nil ,_dcdaa ;};};return _cbafd ,nil ;};func _agbc (_cfgc _ee .Image ,_egcb Image ,_gca _ee .Rectangle ){for _dfc :=0;_dfc < _gca .Max .X ;

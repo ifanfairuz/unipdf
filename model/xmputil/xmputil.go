@@ -10,8 +10,8 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package xmputil provides abstraction used by the pdf document XMP Metadata.
-package xmputil ;import (_c "errors";_bb "fmt";_dc "github.com/trimmer-io/go-xmp/models/pdf";_fd "github.com/trimmer-io/go-xmp/models/xmp_mm";_g "github.com/trimmer-io/go-xmp/xmp";_daa "github.com/unidoc/unipdf/v3/core";_b "github.com/unidoc/unipdf/v3/internal/timeutils";
-_gc "github.com/unidoc/unipdf/v3/internal/uuid";_fa "github.com/unidoc/unipdf/v3/model/xmputil/pdfaextension";_gb "github.com/unidoc/unipdf/v3/model/xmputil/pdfaid";_da "strconv";_d "time";);
+package xmputil ;import (_c "errors";_bb "fmt";_dc "github.com/trimmer-io/go-xmp/models/pdf";_fd "github.com/trimmer-io/go-xmp/models/xmp_mm";_g "github.com/trimmer-io/go-xmp/xmp";_daa "github.com/ifanfairuz/unipdf/v3/core";_b "github.com/ifanfairuz/unipdf/v3/internal/timeutils";
+_gc "github.com/ifanfairuz/unipdf/v3/internal/uuid";_fa "github.com/ifanfairuz/unipdf/v3/model/xmputil/pdfaextension";_gb "github.com/ifanfairuz/unipdf/v3/model/xmputil/pdfaid";_da "strconv";_d "time";);
 
 // PdfInfoOptions are the options used for setting pdf info.
 type PdfInfoOptions struct{InfoDict _daa .PdfObject ;PdfVersion string ;Copyright string ;Marked bool ;

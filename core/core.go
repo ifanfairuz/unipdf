@@ -12,9 +12,9 @@
 // Package core defines and implements the primitive PDF object types in golang, and provides functionality
 // for parsing those from a PDF file stream. This includes I/O handling, cross references, repairs, encryption,
 // encoding and other core capabilities.
-package core ;import (_cd "bufio";_db "bytes";_fcc "compress/lzw";_aa "compress/zlib";_ga "crypto/md5";_dd "crypto/rand";_gbg "encoding/hex";_f "errors";_ef "fmt";_fa "github.com/unidoc/unipdf/v3/common";_fae "github.com/unidoc/unipdf/v3/core/security";
-_dg "github.com/unidoc/unipdf/v3/core/security/crypt";_ebb "github.com/unidoc/unipdf/v3/internal/ccittfax";_dda "github.com/unidoc/unipdf/v3/internal/imageutil";_ad "github.com/unidoc/unipdf/v3/internal/jbig2";_bb "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";
-_df "github.com/unidoc/unipdf/v3/internal/jbig2/decoder";_da "github.com/unidoc/unipdf/v3/internal/jbig2/document";_gbd "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_faf "github.com/unidoc/unipdf/v3/internal/strutils";_fca "golang.org/x/image/tiff/lzw";
+package core ;import (_cd "bufio";_db "bytes";_fcc "compress/lzw";_aa "compress/zlib";_ga "crypto/md5";_dd "crypto/rand";_gbg "encoding/hex";_f "errors";_ef "fmt";_fa "github.com/ifanfairuz/unipdf/v3/common";_fae "github.com/ifanfairuz/unipdf/v3/core/security";
+_dg "github.com/ifanfairuz/unipdf/v3/core/security/crypt";_ebb "github.com/ifanfairuz/unipdf/v3/internal/ccittfax";_dda "github.com/ifanfairuz/unipdf/v3/internal/imageutil";_ad "github.com/ifanfairuz/unipdf/v3/internal/jbig2";_bb "github.com/ifanfairuz/unipdf/v3/internal/jbig2/bitmap";
+_df "github.com/ifanfairuz/unipdf/v3/internal/jbig2/decoder";_da "github.com/ifanfairuz/unipdf/v3/internal/jbig2/document";_gbd "github.com/ifanfairuz/unipdf/v3/internal/jbig2/errors";_faf "github.com/ifanfairuz/unipdf/v3/internal/strutils";_fca "golang.org/x/image/tiff/lzw";
 _gc "golang.org/x/xerrors";_gb "image";_b "image/color";_fc "image/jpeg";_ec "io";_eef "io/ioutil";_c "reflect";_ee "regexp";_eg "sort";_gg "strconv";_eb "strings";_e "sync";_d "time";_g "unicode";);
 
 // SetIfNotNil sets the dictionary's key -> val mapping entry -IF- val is not nil.

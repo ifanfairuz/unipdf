@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package security ;import (_cg "bytes";_c "crypto/aes";_ff "crypto/cipher";_cc "crypto/md5";_e "crypto/rand";_g "crypto/rc4";_b "crypto/sha256";_dd "crypto/sha512";_fa "encoding/binary";_fb "errors";_cb "fmt";_ad "github.com/unidoc/unipdf/v3/common";_da "hash";
+package security ;import (_cg "bytes";_c "crypto/aes";_ff "crypto/cipher";_cc "crypto/md5";_e "crypto/rand";_g "crypto/rc4";_b "crypto/sha256";_dd "crypto/sha512";_fa "encoding/binary";_fb "errors";_cb "fmt";_ad "github.com/ifanfairuz/unipdf/v3/common";_da "hash";
 _d "io";_a "math";);func (_gef stdHandlerR4 )alg3 (R int ,_cce ,_bcd []byte )([]byte ,error ){var _gf []byte ;if len (_bcd )> 0{_gf =_gef .alg3Key (R ,_bcd );}else {_gf =_gef .alg3Key (R ,_cce );};_fab ,_dgg :=_g .NewCipher (_gf );if _dgg !=nil {return nil ,_fb .New ("\u0066a\u0069l\u0065\u0064\u0020\u0072\u0063\u0034\u0020\u0063\u0069\u0070\u0068");
 };_fbb :=_gef .paddedPass (_cce );_bga :=make ([]byte ,len (_fbb ));_fab .XORKeyStream (_bga ,_fbb );if R >=3{_cag :=make ([]byte ,len (_gf ));for _aeg :=0;_aeg < 19;_aeg ++{for _cee :=0;_cee < len (_gf );_cee ++{_cag [_cee ]=_gf [_cee ]^byte (_aeg +1);
 };_ced ,_acd :=_g .NewCipher (_cag );if _acd !=nil {return nil ,_fb .New ("\u0066a\u0069l\u0065\u0064\u0020\u0072\u0063\u0034\u0020\u0063\u0069\u0070\u0068");};_ced .XORKeyStream (_bga ,_bga );};};return _bga ,nil ;};func _bf (_ffb ,_ffe string ,_ce int ,_bea []byte )error {if len (_bea )< _ce {return errInvalidField {Func :_ffb ,Field :_ffe ,Exp :_ce ,Got :len (_bea )};

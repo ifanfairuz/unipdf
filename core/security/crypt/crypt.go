@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package crypt ;import (_d "crypto/aes";_a "crypto/cipher";_ec "crypto/md5";_dg "crypto/rand";_e "crypto/rc4";_bg "fmt";_eb "github.com/unidoc/unipdf/v3/common";_dd "github.com/unidoc/unipdf/v3/core/security";_g "io";);func init (){_gc ("\u0041\u0045\u0053V\u0032",_db )};
+package crypt ;import (_d "crypto/aes";_a "crypto/cipher";_ec "crypto/md5";_dg "crypto/rand";_e "crypto/rc4";_bg "fmt";_eb "github.com/ifanfairuz/unipdf/v3/common";_dd "github.com/ifanfairuz/unipdf/v3/core/security";_g "io";);func init (){_gc ("\u0041\u0045\u0053V\u0032",_db )};
 
 
 // Name implements Filter interface.

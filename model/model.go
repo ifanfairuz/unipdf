@@ -37,10 +37,10 @@
 //	fmt.Printf("The PDF file has %d pages\n", numPages)
 //
 // For more examples, see the unidoc-examples repository on GitHub: https://github.com/unidoc/unidoc-examples
-package model ;import (_de "bufio";_cf "bytes";_dd "crypto/md5";_bb "crypto/rand";_ggc "crypto/sha1";_gg "crypto/x509";_b "encoding/binary";_gf "encoding/hex";_cc "errors";_g "fmt";_gee "github.com/unidoc/pkcs7";_gcf "github.com/unidoc/unipdf/v3/common";
-_bbe "github.com/unidoc/unipdf/v3/core";_bad "github.com/unidoc/unipdf/v3/core/security";_ac "github.com/unidoc/unipdf/v3/core/security/crypt";_fb "github.com/unidoc/unipdf/v3/internal/cmap";_gb "github.com/unidoc/unipdf/v3/internal/imageutil";_ea "github.com/unidoc/unipdf/v3/internal/license";
-_dfc "github.com/unidoc/unipdf/v3/internal/sampling";_ff "github.com/unidoc/unipdf/v3/internal/textencoding";_gge "github.com/unidoc/unipdf/v3/internal/timeutils";_ggeb "github.com/unidoc/unipdf/v3/internal/transform";_gcg "github.com/unidoc/unipdf/v3/model/internal/docutil";
-_bfg "github.com/unidoc/unipdf/v3/model/internal/fonts";_gfg "github.com/unidoc/unipdf/v3/model/mdp";_bfc "github.com/unidoc/unipdf/v3/model/sigutil";_gfe "github.com/unidoc/unipdf/v3/ps";_abf "github.com/unidoc/unitype";_cfc "golang.org/x/xerrors";_da "hash";
+package model ;import (_de "bufio";_cf "bytes";_dd "crypto/md5";_bb "crypto/rand";_ggc "crypto/sha1";_gg "crypto/x509";_b "encoding/binary";_gf "encoding/hex";_cc "errors";_g "fmt";_gee "github.com/unidoc/pkcs7";_gcf "github.com/ifanfairuz/unipdf/v3/common";
+_bbe "github.com/ifanfairuz/unipdf/v3/core";_bad "github.com/ifanfairuz/unipdf/v3/core/security";_ac "github.com/ifanfairuz/unipdf/v3/core/security/crypt";_fb "github.com/ifanfairuz/unipdf/v3/internal/cmap";_gb "github.com/ifanfairuz/unipdf/v3/internal/imageutil";_ea "github.com/ifanfairuz/unipdf/v3/internal/license";
+_dfc "github.com/ifanfairuz/unipdf/v3/internal/sampling";_ff "github.com/ifanfairuz/unipdf/v3/internal/textencoding";_gge "github.com/ifanfairuz/unipdf/v3/internal/timeutils";_ggeb "github.com/ifanfairuz/unipdf/v3/internal/transform";_gcg "github.com/ifanfairuz/unipdf/v3/model/internal/docutil";
+_bfg "github.com/ifanfairuz/unipdf/v3/model/internal/fonts";_gfg "github.com/ifanfairuz/unipdf/v3/model/mdp";_bfc "github.com/ifanfairuz/unipdf/v3/model/sigutil";_gfe "github.com/ifanfairuz/unipdf/v3/ps";_abf "github.com/unidoc/unitype";_cfc "golang.org/x/xerrors";_da "hash";
 _bf "image";_c "image/color";_ "image/gif";_ "image/png";_geb "io";_gc "io/ioutil";_ab "math";_e "math/rand";_cd "os";_a "regexp";_cg "sort";_fc "strconv";_df "strings";_f "sync";_ge "time";_ddb "unicode";_eg "unicode/utf8";);
 
 // PdfFieldSignature signature field represents digital signatures and optional data for authenticating

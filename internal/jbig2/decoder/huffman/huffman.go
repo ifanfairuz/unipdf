@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package huffman ;import (_de "errors";_d "fmt";_a "github.com/unidoc/unipdf/v3/internal/bitwise";_e "github.com/unidoc/unipdf/v3/internal/jbig2/internal";_ad "math";_g "strings";);type Node interface{Decode (_eda *_a .Reader )(int64 ,error );String ()string ;
+package huffman ;import (_de "errors";_d "fmt";_a "github.com/ifanfairuz/unipdf/v3/internal/bitwise";_e "github.com/ifanfairuz/unipdf/v3/internal/jbig2/internal";_ad "math";_g "strings";);type Node interface{Decode (_eda *_a .Reader )(int64 ,error );String ()string ;
 };func (_aec *StandardTable )RootNode ()*InternalNode {return _aec ._gec };func (_cea *InternalNode )Decode (r *_a .Reader )(int64 ,error ){_ge ,_gga :=r .ReadBit ();if _gga !=nil {return 0,_gga ;};if _ge ==0{return _cea ._gce .Decode (r );};return _cea ._ga .Decode (r );
 };func GetStandardTable (number int )(Tabler ,error ){if number <=0||number > len (_cg ){return nil ,_de .New ("\u0049n\u0064e\u0078\u0020\u006f\u0075\u0074 \u006f\u0066 \u0072\u0061\u006e\u0067\u0065");};_feg :=_cg [number -1];if _feg ==nil {var _aa error ;
 _feg ,_aa =_cec (_gaf [number -1]);if _aa !=nil {return nil ,_aa ;};_cg [number -1]=_feg ;};return _feg ,nil ;};func (_gd *FixedSizeTable )String ()string {return _gd ._cb .String ()+"\u000a"};type ValueNode struct{_ae int32 ;_bg int32 ;_fa bool ;};func _dd (_fff ,_fbf int32 )string {var _bcb int32 ;

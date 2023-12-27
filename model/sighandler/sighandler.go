@@ -10,8 +10,8 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package sighandler implements digital signature handlers for PDF signature validation and signing.
-package sighandler ;import (_gf "bytes";_dc "crypto";_gc "crypto/rand";_g "crypto/rsa";_gg "crypto/x509";_c "crypto/x509/pkix";_fe "encoding/asn1";_fa "encoding/hex";_d "errors";_a "fmt";_df "github.com/unidoc/pkcs7";_aa "github.com/unidoc/timestamp";_bf "github.com/unidoc/unipdf/v3/common";
-_feg "github.com/unidoc/unipdf/v3/core";_af "github.com/unidoc/unipdf/v3/model";_da "github.com/unidoc/unipdf/v3/model/mdp";_fg "github.com/unidoc/unipdf/v3/model/sigutil";_bb "hash";_e "math/big";_bbb "strings";_f "time";);type docTimeStamp struct{_ecd string ;
+package sighandler ;import (_gf "bytes";_dc "crypto";_gc "crypto/rand";_g "crypto/rsa";_gg "crypto/x509";_c "crypto/x509/pkix";_fe "encoding/asn1";_fa "encoding/hex";_d "errors";_a "fmt";_df "github.com/unidoc/pkcs7";_aa "github.com/unidoc/timestamp";_bf "github.com/ifanfairuz/unipdf/v3/common";
+_feg "github.com/ifanfairuz/unipdf/v3/core";_af "github.com/ifanfairuz/unipdf/v3/model";_da "github.com/ifanfairuz/unipdf/v3/model/mdp";_fg "github.com/ifanfairuz/unipdf/v3/model/sigutil";_bb "hash";_e "math/big";_bbb "strings";_f "time";);type docTimeStamp struct{_ecd string ;
 _dea _dc .Hash ;_efd int ;_cddd *_fg .TimestampClient ;};
 
 // NewAdobeX509RSASHA1Custom creates a new Adobe.PPKMS/Adobe.PPKLite

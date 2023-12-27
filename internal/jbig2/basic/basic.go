@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package basic ;import _c "github.com/unidoc/unipdf/v3/internal/jbig2/errors";func Min (x ,y int )int {if x < y {return x ;};return y ;};func Abs (v int )int {if v > 0{return v ;};return -v ;};func (_dd *Stack )Peek ()(_ece interface{},_gf bool ){return _dd .peek ()};
+package basic ;import _c "github.com/ifanfairuz/unipdf/v3/internal/jbig2/errors";func Min (x ,y int )int {if x < y {return x ;};return y ;};func Abs (v int )int {if v > 0{return v ;};return -v ;};func (_dd *Stack )Peek ()(_ece interface{},_gf bool ){return _dd .peek ()};
 func (_db *Stack )Pop ()(_ee interface{},_adf bool ){_ee ,_adf =_db .peek ();if !_adf {return nil ,_adf ;};_db .Data =_db .Data [:_db .top ()];return _ee ,true ;};type NumSlice []float32 ;func NewNumSlice (i int )*NumSlice {_bb :=NumSlice (make ([]float32 ,i ));
 return &_bb };func NewIntSlice (i int )*IntSlice {_g :=IntSlice (make ([]int ,i ));return &_g };func Ceil (numerator ,denominator int )int {if numerator %denominator ==0{return numerator /denominator ;};return (numerator /denominator )+1;};func (_a *NumSlice )AddInt (v int ){*_a =append (*_a ,float32 (v ))};
 func (_fb NumSlice )GetInt (i int )(int ,error ){const _fcf ="\u0047\u0065\u0074\u0049\u006e\u0074";if i < 0||i > len (_fb )-1{return 0,_c .Errorf (_fcf ,"\u0069n\u0064\u0065\u0078\u003a\u0020\u0027\u0025\u0064\u0027\u0020\u006fu\u0074\u0020\u006f\u0066\u0020\u0072\u0061\u006e\u0067\u0065",i );

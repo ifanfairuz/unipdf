@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package document ;import (_e "encoding/binary";_g "fmt";_fd "github.com/unidoc/unipdf/v3/common";_cg "github.com/unidoc/unipdf/v3/internal/bitwise";_d "github.com/unidoc/unipdf/v3/internal/jbig2/basic";_cgg "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";
-_be "github.com/unidoc/unipdf/v3/internal/jbig2/document/segments";_dc "github.com/unidoc/unipdf/v3/internal/jbig2/encoder/classer";_ac "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_c "io";_b "math";_f "runtime/debug";);func (_aded *Document )isFileHeaderPresent ()(bool ,error ){_aded .InputStream .Mark ();
+package document ;import (_e "encoding/binary";_g "fmt";_fd "github.com/ifanfairuz/unipdf/v3/common";_cg "github.com/ifanfairuz/unipdf/v3/internal/bitwise";_d "github.com/ifanfairuz/unipdf/v3/internal/jbig2/basic";_cgg "github.com/ifanfairuz/unipdf/v3/internal/jbig2/bitmap";
+_be "github.com/ifanfairuz/unipdf/v3/internal/jbig2/document/segments";_dc "github.com/ifanfairuz/unipdf/v3/internal/jbig2/encoder/classer";_ac "github.com/ifanfairuz/unipdf/v3/internal/jbig2/errors";_c "io";_b "math";_f "runtime/debug";);func (_aded *Document )isFileHeaderPresent ()(bool ,error ){_aded .InputStream .Mark ();
 for _ ,_bgf :=range _ab {_fce ,_bcbg :=_aded .InputStream .ReadByte ();if _bcbg !=nil {return false ,_bcbg ;};if _bgf !=_fce {_aded .InputStream .Reset ();return false ,nil ;};};_aded .InputStream .Reset ();return true ,nil ;};func (_cbg *Page )GetHeight ()(int ,error ){return _cbg .getHeight ()};
 func (_bad *Page )addTextRegionSegment (_bbf []*_be .Header ,_dgg ,_egg map[int ]int ,_cggg []int ,_bgea *_cgg .Points ,_bec *_cgg .Bitmaps ,_cfc *_d .IntSlice ,_ccba *_cgg .Boxes ,_geca ,_cdf int ){_efc :=&_be .TextRegion {NumberOfSymbols :uint32 (_cdf )};
 _efc .InitEncode (_dgg ,_egg ,_cggg ,_bgea ,_bec ,_cfc ,_ccba ,_bad .FinalWidth ,_bad .FinalHeight ,_geca );_abe :=&_be .Header {RTSegments :_bbf ,SegmentData :_efc ,PageAssociation :_bad .PageNumber ,Type :_be .TImmediateTextRegion };_edd :=_be .TPageInformation ;

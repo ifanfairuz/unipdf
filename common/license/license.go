@@ -10,7 +10,7 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package license helps manage commercial licenses and check if they are valid for the version of unipdf used.
-package license ;import _c "github.com/unidoc/unipdf/v3/internal/license";
+package license ;import _c "github.com/ifanfairuz/unipdf/v3/internal/license";
 
 // MakeUnlicensedKey returns a default key.
 func MakeUnlicensedKey ()*LicenseKey {return _c .MakeUnlicensedKey ()};

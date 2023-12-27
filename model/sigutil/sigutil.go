@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sigutil ;import (_a "bytes";_ca "crypto";_f "crypto/x509";_gf "encoding/asn1";_gd "encoding/pem";_cd "errors";_ef "fmt";_ab "github.com/unidoc/timestamp";_gdg "github.com/unidoc/unipdf/v3/common";_gfb "golang.org/x/crypto/ocsp";_ae "io";_e "io/ioutil";
+package sigutil ;import (_a "bytes";_ca "crypto";_f "crypto/x509";_gf "encoding/asn1";_gd "encoding/pem";_cd "errors";_ef "fmt";_ab "github.com/unidoc/timestamp";_gdg "github.com/ifanfairuz/unipdf/v3/common";_gfb "golang.org/x/crypto/ocsp";_ae "io";_e "io/ioutil";
 _g "net/http";_b "time";);
 
 // NewCRLClient returns a new CRL client.

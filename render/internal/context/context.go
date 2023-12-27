@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package context ;import (_e "errors";_bg "github.com/unidoc/freetype/truetype";_ge "github.com/unidoc/unipdf/v3/core";_fe "github.com/unidoc/unipdf/v3/internal/textencoding";_f "github.com/unidoc/unipdf/v3/internal/transform";_eb "github.com/unidoc/unipdf/v3/model";
+package context ;import (_e "errors";_bg "github.com/unidoc/freetype/truetype";_ge "github.com/ifanfairuz/unipdf/v3/core";_fe "github.com/ifanfairuz/unipdf/v3/internal/textencoding";_f "github.com/ifanfairuz/unipdf/v3/internal/transform";_eb "github.com/ifanfairuz/unipdf/v3/model";
 _d "golang.org/x/image/font";_c "image";_g "image/color";_gg "strings";);func (_gbc *TextState )ProcTf (font *TextFont ){_gbc .Tf =font };type LineCap int ;type Context interface{Push ();Pop ();Matrix ()_f .Matrix ;SetMatrix (_gd _f .Matrix );Translate (_ef ,_dg float64 );
 Scale (_fc ,_a float64 );Rotate (_be float64 );MoveTo (_gf ,_df float64 );LineTo (_ed ,_gfg float64 );CubicTo (_fa ,_eda ,_bgc ,_ga ,_bec ,_fec float64 );QuadraticTo (_bgb ,_ag ,_gfgb ,_bc float64 );NewSubPath ();ClosePath ();ClearPath ();Clip ();ClipPreserve ();
 ResetClip ();LineWidth ()float64 ;SetLineWidth (_cf float64 );SetLineCap (_fd LineCap );SetLineJoin (_dd LineJoin );SetDash (_fae ...float64 );SetDashOffset (_dgd float64 );Fill ();FillPreserve ();Stroke ();StrokePreserve ();SetRGBA (_ba ,_efa ,_ff ,_ae float64 );

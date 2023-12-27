@@ -14,7 +14,7 @@
 //
 // Package ps implements various functionalities needed for handling Postscript for PDF uses, in particular
 // for PDF function type 4.
-package ps ;import (_a "bufio";_d "bytes";_g "errors";_ag "fmt";_fd "github.com/unidoc/unipdf/v3/common";_dc "github.com/unidoc/unipdf/v3/core";_gd "io";_fe "math";);func (_cfbb *PSOperand )not (_aaed *PSStack )error {_bfeb ,_daea :=_aaed .Pop ();if _daea !=nil {return _daea ;
+package ps ;import (_a "bufio";_d "bytes";_g "errors";_ag "fmt";_fd "github.com/ifanfairuz/unipdf/v3/common";_dc "github.com/ifanfairuz/unipdf/v3/core";_gd "io";_fe "math";);func (_cfbb *PSOperand )not (_aaed *PSStack )error {_bfeb ,_daea :=_aaed .Pop ();if _daea !=nil {return _daea ;
 };if _fge ,_caaa :=_bfeb .(*PSBoolean );_caaa {_daea =_aaed .Push (MakeBool (!_fge .Val ));return _daea ;}else if _gea ,_gaa :=_bfeb .(*PSInteger );_gaa {_daea =_aaed .Push (MakeInteger (^_gea .Val ));return _daea ;}else {return ErrTypeCheck ;};};func (_dbg *PSOperand )div (_edb *PSStack )error {_fff ,_gba :=_edb .Pop ();
 if _gba !=nil {return _gba ;};_abe ,_gba :=_edb .Pop ();if _gba !=nil {return _gba ;};_cdg ,_cfa :=_fff .(*PSReal );_fae ,_aca :=_fff .(*PSInteger );if !_cfa &&!_aca {return ErrTypeCheck ;};if _cfa &&_cdg .Val ==0{return ErrUndefinedResult ;};if _aca &&_fae .Val ==0{return ErrUndefinedResult ;
 };_defb ,_gca :=_abe .(*PSReal );_agff ,_cadc :=_abe .(*PSInteger );if !_gca &&!_cadc {return ErrTypeCheck ;};var _cdd float64 ;if _gca {_cdd =_defb .Val ;}else {_cdd =float64 (_agff .Val );};if _cfa {_cdd /=_cdg .Val ;}else {_cdd /=float64 (_fae .Val );

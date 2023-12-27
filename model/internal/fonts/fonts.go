@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package fonts ;import (_de "bytes";_ab "encoding/binary";_fa "errors";_b "fmt";_ff "github.com/unidoc/unipdf/v3/common";_e "github.com/unidoc/unipdf/v3/core";_ga "github.com/unidoc/unipdf/v3/internal/cmap";_g "github.com/unidoc/unipdf/v3/internal/textencoding";
+package fonts ;import (_de "bytes";_ab "encoding/binary";_fa "errors";_b "fmt";_ff "github.com/ifanfairuz/unipdf/v3/common";_e "github.com/ifanfairuz/unipdf/v3/core";_ga "github.com/ifanfairuz/unipdf/v3/internal/cmap";_g "github.com/ifanfairuz/unipdf/v3/internal/textencoding";
 _a "io";_bf "os";_f "regexp";_dcc "sort";_dc "strings";_c "sync";);func (_bc *RuneCharSafeMap )Length ()int {_bc ._ffe .RLock ();defer _bc ._ffe .RUnlock ();return len (_bc ._gag );};const (FontWeightMedium FontWeight =iota ;FontWeightBold ;FontWeightRoman ;
 );func RegisterStdFont (name StdFontName ,fnc func ()StdFont ,aliases ...StdFontName ){if _ ,_aed :=_cfb .read (name );_aed {panic ("\u0066o\u006e\u0074\u0020\u0061l\u0072\u0065\u0061\u0064\u0079 \u0072e\u0067i\u0073\u0074\u0065\u0072\u0065\u0064\u003a "+string (name ));
 };_cfb .write (name ,fnc );for _ ,_gb :=range aliases {RegisterStdFont (_gb ,fnc );};};func _ddd ()StdFont {_dcd .Do (_afc );_cb :=Descriptor {Name :CourierBoldName ,Family :string (CourierName ),Weight :FontWeightBold ,Flags :0x0021,BBox :[4]float64 {-113,-250,749,801},ItalicAngle :0,Ascent :629,Descent :-157,CapHeight :562,XHeight :439,StemV :106,StemH :84};

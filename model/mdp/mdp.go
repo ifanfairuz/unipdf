@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package mdp ;import (_da "errors";_g "fmt";_e "github.com/unidoc/unipdf/v3/core";);func (_edc *DiffResults )addWarningWithDescription (_fdfg int ,_ece string ){if _edc .Warnings ==nil {_edc .Warnings =make ([]*DiffResult ,0);};_edc .Warnings =append (_edc .Warnings ,&DiffResult {Revision :_fdfg ,Description :_ece });
+package mdp ;import (_da "errors";_g "fmt";_e "github.com/ifanfairuz/unipdf/v3/core";);func (_edc *DiffResults )addWarningWithDescription (_fdfg int ,_ece string ){if _edc .Warnings ==nil {_edc .Warnings =make ([]*DiffResult ,0);};_edc .Warnings =append (_edc .Warnings ,&DiffResult {Revision :_fdfg ,Description :_ece });
 };func _cag (_gffg _e .PdfObject )([]_e .PdfObject ,error ){_dcg :=make ([]_e .PdfObject ,0);if _gffg !=nil {_eca :=_gffg ;if _cbdd ,_bda :=_e .GetIndirect (_gffg );_bda {_eca =_cbdd .PdfObject ;};if _gee ,_ad :=_e .GetArray (_eca );_ad {_dcg =_gee .Elements ();
 }else {return nil ,_da .New ("\u0075n\u0065\u0078\u0070\u0065c\u0074\u0065\u0064\u0020\u0061n\u006eo\u0074s\u0027\u0020\u006f\u0062\u006a\u0065\u0063t");};};return _dcg ,nil ;};
 

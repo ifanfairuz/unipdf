@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sanitize ;import (_g "github.com/unidoc/unipdf/v3/common";_a "github.com/unidoc/unipdf/v3/core";);func (_cb *Sanitizer )analyze (_bgfc []_a .PdfObject ){_dag :=map[string ]int {};for _ ,_add :=range _bgfc {switch _ef :=_add .(type ){case *_a .PdfIndirectObject :_aga ,_ege :=_a .GetDict (_ef .PdfObject );
+package sanitize ;import (_g "github.com/ifanfairuz/unipdf/v3/common";_a "github.com/ifanfairuz/unipdf/v3/core";);func (_cb *Sanitizer )analyze (_bgfc []_a .PdfObject ){_dag :=map[string ]int {};for _ ,_add :=range _bgfc {switch _ef :=_add .(type ){case *_a .PdfIndirectObject :_aga ,_ege :=_a .GetDict (_ef .PdfObject );
 if _ege {if _fbg ,_gfc :=_a .GetName (_aga .Get ("\u0054\u0079\u0070\u0065"));_gfc &&*_fbg =="\u0043a\u0074\u0061\u006c\u006f\u0067"{if _ ,_gg :=_a .GetIndirect (_aga .Get ("\u004f\u0070\u0065\u006e\u0041\u0063\u0074\u0069\u006f\u006e"));_gg {_dag ["\u004f\u0070\u0065\u006e\u0041\u0063\u0074\u0069\u006f\u006e"]++;
 };}else if _aa ,_fcc :=_a .GetName (_aga .Get ("\u0053"));_fcc {_af :=_aa .String ();if _af =="\u004a\u0061\u0076\u0061\u0053\u0063\u0072\u0069\u0070\u0074"||_af =="\u0055\u0052\u0049"||_af =="\u0047\u006f\u0054\u006f"||_af =="\u0047\u006f\u0054o\u0052"||_af =="\u004c\u0061\u0075\u006e\u0063\u0068"{_dag [_af ]++;
 }else if _af =="\u0052e\u006e\u0064\u0069\u0074\u0069\u006fn"{if _ ,_ebg :=_a .GetStream (_aga .Get ("\u004a\u0053"));_ebg {_dag [_af ]++;};};}else if _fcg :=_aga .Get ("\u004a\u0061\u0076\u0061\u0053\u0063\u0072\u0069\u0070\u0074");_fcg !=nil {_dag ["\u004a\u0061\u0076\u0061\u0053\u0063\u0072\u0069\u0070\u0074"]++;

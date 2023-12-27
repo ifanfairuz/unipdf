@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package testutils ;import (_bc "crypto/md5";_da "encoding/hex";_d "errors";_g "fmt";_cf "github.com/unidoc/unipdf/v3/common";_bce "github.com/unidoc/unipdf/v3/core";_fg "image";_bbb "image/png";_bb "io";_cc "os";_fc "os/exec";_f "path/filepath";_c "strings";
+package testutils ;import (_bc "crypto/md5";_da "encoding/hex";_d "errors";_g "fmt";_cf "github.com/ifanfairuz/unipdf/v3/common";_bce "github.com/ifanfairuz/unipdf/v3/core";_fg "image";_bbb "image/png";_bb "io";_cc "os";_fc "os/exec";_f "path/filepath";_c "strings";
 _bcg "testing";);func CompareImages (img1 ,img2 _fg .Image )(bool ,error ){_bd :=img1 .Bounds ();_ccf :=0;for _ed :=0;_ed < _bd .Size ().X ;_ed ++{for _ac :=0;_ac < _bd .Size ().Y ;_ac ++{_gd ,_df ,_bdf ,_ :=img1 .At (_ed ,_ac ).RGBA ();_ede ,_eg ,_be ,_ :=img2 .At (_ed ,_ac ).RGBA ();
 if _gd !=_ede ||_df !=_eg ||_bdf !=_be {_ccf ++;};};};_cfb :=float64 (_ccf )/float64 (_bd .Dx ()*_bd .Dy ());if _cfb > 0.0001{_g .Printf ("\u0064\u0069\u0066f \u0066\u0072\u0061\u0063\u0074\u0069\u006f\u006e\u003a\u0020\u0025\u0076\u0020\u0028\u0025\u0064\u0029\u000a",_cfb ,_ccf );
 return false ,nil ;};return true ,nil ;};var (ErrRenderNotSupported =_d .New ("\u0072\u0065\u006e\u0064\u0065r\u0069\u006e\u0067\u0020\u0050\u0044\u0046\u0020\u0066\u0069\u006c\u0065\u0073 \u0069\u0073\u0020\u006e\u006f\u0074\u0020\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0065\u0064\u0020\u006f\u006e\u0020\u0074\u0068\u0069\u0073\u0020\u0073\u0079\u0073\u0074\u0065m");

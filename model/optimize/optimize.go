@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package optimize ;import (_ff "bytes";_ee "crypto/md5";_bb "errors";_a "fmt";_f "github.com/unidoc/unipdf/v3/common";_cg "github.com/unidoc/unipdf/v3/contentstream";_fbb "github.com/unidoc/unipdf/v3/core";_b "github.com/unidoc/unipdf/v3/extractor";_ag "github.com/unidoc/unipdf/v3/internal/imageutil";
-_g "github.com/unidoc/unipdf/v3/internal/textencoding";_eg "github.com/unidoc/unipdf/v3/model";_ac "github.com/unidoc/unitype";_ed "golang.org/x/image/draw";_c "math";_fb "strings";);
+package optimize ;import (_ff "bytes";_ee "crypto/md5";_bb "errors";_a "fmt";_f "github.com/ifanfairuz/unipdf/v3/common";_cg "github.com/ifanfairuz/unipdf/v3/contentstream";_fbb "github.com/ifanfairuz/unipdf/v3/core";_b "github.com/ifanfairuz/unipdf/v3/extractor";_ag "github.com/ifanfairuz/unipdf/v3/internal/imageutil";
+_g "github.com/ifanfairuz/unipdf/v3/internal/textencoding";_eg "github.com/ifanfairuz/unipdf/v3/model";_ac "github.com/unidoc/unitype";_ed "golang.org/x/image/draw";_c "math";_fb "strings";);
 
 // Optimize optimizes PDF objects to decrease PDF size.
 func (_bcb *ObjectStreams )Optimize (objects []_fbb .PdfObject )(_ddc []_fbb .PdfObject ,_edg error ){_fecaa :=&_fbb .PdfObjectStreams {};_bdcg :=make ([]_fbb .PdfObject ,0,len (objects ));for _ ,_ddce :=range objects {if _bcd ,_gac :=_ddce .(*_fbb .PdfIndirectObject );

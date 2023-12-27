@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package arithmetic ;import (_g "fmt";_b "github.com/unidoc/unipdf/v3/common";_cg "github.com/unidoc/unipdf/v3/internal/bitwise";_d "github.com/unidoc/unipdf/v3/internal/jbig2/internal";_c "io";_e "strings";);func (_fed *DecoderStats )String ()string {_gaa :=&_e .Builder {};
+package arithmetic ;import (_g "fmt";_b "github.com/ifanfairuz/unipdf/v3/common";_cg "github.com/ifanfairuz/unipdf/v3/internal/bitwise";_d "github.com/ifanfairuz/unipdf/v3/internal/jbig2/internal";_c "io";_e "strings";);func (_fed *DecoderStats )String ()string {_gaa :=&_e .Builder {};
 _gaa .WriteString (_g .Sprintf ("S\u0074\u0061\u0074\u0073\u003a\u0020\u0020\u0025\u0064\u000a",len (_fed ._adb )));for _bcf ,_cce :=range _fed ._adb {if _cce !=0{_gaa .WriteString (_g .Sprintf ("N\u006f\u0074\u0020\u007aer\u006f \u0061\u0074\u003a\u0020\u0025d\u0020\u002d\u0020\u0025\u0064\u000a",_bcf ,_cce ));
 };};return _gaa .String ();};func (_cc *Decoder )lpsExchange (_gaf *DecoderStats ,_cgdg int32 ,_ffe uint32 )int {_egd :=_gaf .getMps ();if _cc ._a < _ffe {_gaf .setEntry (int (_ce [_cgdg ][1]));_cc ._a =_ffe ;return int (_egd );};if _ce [_cgdg ][3]==1{_gaf .toggleMps ();
 };_gaf .setEntry (int (_ce [_cgdg ][2]));_cc ._a =_ffe ;return int (1-_egd );};func (_cd *DecoderStats )cx ()byte {return _cd ._adb [_cd ._ed ]};func (_fg *Decoder )DecodeIAID (codeLen uint64 ,stats *DecoderStats )(int64 ,error ){_fg ._gc =1;var _bdc uint64 ;

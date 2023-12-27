@@ -14,9 +14,9 @@
 // It is built on top of the model package to provide access to the most common
 // operations such as creating text and image reports and manipulating existing pages.
 //
-package creator ;import (_fg "bytes";_d "encoding/xml";_e "errors";_dg "fmt";_aa "github.com/gorilla/i18n/linebreak";_bfg "github.com/unidoc/unichart/render";_ed "github.com/unidoc/unipdf/v3/common";_ddc "github.com/unidoc/unipdf/v3/contentstream";_bc "github.com/unidoc/unipdf/v3/contentstream/draw";
-_ag "github.com/unidoc/unipdf/v3/core";_gca "github.com/unidoc/unipdf/v3/internal/graphic2d/svg";_af "github.com/unidoc/unipdf/v3/internal/integrations/unichart";_db "github.com/unidoc/unipdf/v3/internal/license";_gc "github.com/unidoc/unipdf/v3/internal/transform";
-_bg "github.com/unidoc/unipdf/v3/model";_cc "golang.org/x/text/unicode/bidi";_dd "image";_ec "io";_ef "math";_fge "os";_bf "regexp";_g "sort";_b "strconv";_fgb "strings";_f "text/template";_a "unicode";);
+package creator ;import (_fg "bytes";_d "encoding/xml";_e "errors";_dg "fmt";_aa "github.com/gorilla/i18n/linebreak";_bfg "github.com/unidoc/unichart/render";_ed "github.com/ifanfairuz/unipdf/v3/common";_ddc "github.com/ifanfairuz/unipdf/v3/contentstream";_bc "github.com/ifanfairuz/unipdf/v3/contentstream/draw";
+_ag "github.com/ifanfairuz/unipdf/v3/core";_gca "github.com/ifanfairuz/unipdf/v3/internal/graphic2d/svg";_af "github.com/ifanfairuz/unipdf/v3/internal/integrations/unichart";_db "github.com/ifanfairuz/unipdf/v3/internal/license";_gc "github.com/ifanfairuz/unipdf/v3/internal/transform";
+_bg "github.com/ifanfairuz/unipdf/v3/model";_cc "golang.org/x/text/unicode/bidi";_dd "image";_ec "io";_ef "math";_fge "os";_bf "regexp";_g "sort";_b "strconv";_fgb "strings";_f "text/template";_a "unicode";);
 
 // AddAnnotation adds an annotation to the current block.
 // The annotation will be added to the page the block will be rendered on.

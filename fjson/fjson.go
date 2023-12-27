@@ -10,7 +10,7 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package fjson provides support for loading PDF form field data from JSON data/files.
-package fjson ;import (_g "encoding/json";_b "github.com/unidoc/unipdf/v3/common";_e "github.com/unidoc/unipdf/v3/core";_bf "github.com/unidoc/unipdf/v3/model";_ae "io";_f "os";);
+package fjson ;import (_g "encoding/json";_b "github.com/ifanfairuz/unipdf/v3/common";_e "github.com/ifanfairuz/unipdf/v3/core";_bf "github.com/ifanfairuz/unipdf/v3/model";_ae "io";_f "os";);
 
 // LoadFromPDFFile loads form field data from a PDF file.
 func LoadFromPDFFile (filePath string )(*FieldData ,error ){_fee ,_fad :=_f .Open (filePath );if _fad !=nil {return nil ,_fad ;};defer _fee .Close ();return LoadFromPDF (_fee );};

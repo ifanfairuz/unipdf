@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package docutil ;import (_g "errors";_d "fmt";_c "github.com/unidoc/unipdf/v3/common";_b "github.com/unidoc/unipdf/v3/core";);func (_egf *Document )FindCatalog ()(*Catalog ,bool ){var _dd *_b .PdfObjectDictionary ;for _ ,_bcb :=range _egf .Objects {_bfa ,_dbe :=_b .GetDict (_bcb );
+package docutil ;import (_g "errors";_d "fmt";_c "github.com/ifanfairuz/unipdf/v3/common";_b "github.com/ifanfairuz/unipdf/v3/core";);func (_egf *Document )FindCatalog ()(*Catalog ,bool ){var _dd *_b .PdfObjectDictionary ;for _ ,_bcb :=range _egf .Objects {_bfa ,_dbe :=_b .GetDict (_bcb );
 if !_dbe {continue ;};if _bcd ,_eaa :=_b .GetName (_bfa .Get ("\u0054\u0079\u0070\u0065"));_eaa &&*_bcd =="\u0043a\u0074\u0061\u006c\u006f\u0067"{_dd =_bfa ;break ;};};if _dd ==nil {return nil ,false ;};return &Catalog {Object :_dd ,_a :_egf },true ;};
 func (_bae Page )GetResourcesXObject ()(*_b .PdfObjectDictionary ,bool ){_gga ,_aa :=_bae .GetResources ();if !_aa {return nil ,false ;};return _b .GetDict (_gga .Get ("\u0058O\u0062\u006a\u0065\u0063\u0074"));};type Page struct{_aff int ;Object *_b .PdfObjectDictionary ;
 _bba *Document ;};type Document struct{ID [2]string ;Version _b .Version ;Objects []_b .PdfObject ;Info _b .PdfObject ;Crypt *_b .PdfCrypt ;UseHashBasedID bool ;};func (_af *Catalog )GetPages ()([]Page ,bool ){_ec ,_eb :=_b .GetDict (_af .Object .Get ("\u0050\u0061\u0067e\u0073"));

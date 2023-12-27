@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sampling ;import (_de "github.com/unidoc/unipdf/v3/internal/bitwise";_ad "github.com/unidoc/unipdf/v3/internal/imageutil";_d "io";);func (_f *Reader )ReadSample ()(uint32 ,error ){if _f ._ge ==_f ._g .Height {return 0,_d .EOF ;};_cc ,_dg :=_f ._b .ReadBits (byte (_f ._g .BitsPerComponent ));
+package sampling ;import (_de "github.com/ifanfairuz/unipdf/v3/internal/bitwise";_ad "github.com/ifanfairuz/unipdf/v3/internal/imageutil";_d "io";);func (_f *Reader )ReadSample ()(uint32 ,error ){if _f ._ge ==_f ._g .Height {return 0,_d .EOF ;};_cc ,_dg :=_f ._b .ReadBits (byte (_f ._g .BitsPerComponent ));
 if _dg !=nil {return 0,_dg ;};_f ._c --;if _f ._c ==0{_f ._c =_f ._g .ColorComponents ;_f ._bg ++;};if _f ._bg ==_f ._g .Width {if _f ._da {_f ._b .ConsumeRemainingBits ();};_f ._bg =0;_f ._ge ++;};return uint32 (_cc ),nil ;};func (_bbg *Writer )WriteSamples (samples []uint32 )error {for _dag :=0;
 _dag < len (samples );_dag ++{if _bed :=_bbg .WriteSample (samples [_dag ]);_bed !=nil {return _bed ;};};return nil ;};func ResampleBytes (data []byte ,bitsPerSample int )[]uint32 {var _gc []uint32 ;_ag :=bitsPerSample ;var _ef uint32 ;var _bc byte ;_dgg :=0;
 _bgf :=0;_cf :=0;for _cf < len (data ){if _dgg > 0{_fd :=_dgg ;if _ag < _fd {_fd =_ag ;};_ef =(_ef <<uint (_fd ))|uint32 (_bc >>uint (8-_fd ));_dgg -=_fd ;if _dgg > 0{_bc =_bc <<uint (_fd );}else {_bc =0;};_ag -=_fd ;if _ag ==0{_gc =append (_gc ,_ef );

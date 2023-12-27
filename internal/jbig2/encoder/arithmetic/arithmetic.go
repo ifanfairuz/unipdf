@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package arithmetic ;import (_a "bytes";_cd "github.com/unidoc/unipdf/v3/common";_f "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";_gd "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_c "io";);func (_gbb *Encoder )flush (){_gbb .setBits ();_gbb ._bc <<=_gbb ._gc ;
+package arithmetic ;import (_a "bytes";_cd "github.com/ifanfairuz/unipdf/v3/common";_f "github.com/ifanfairuz/unipdf/v3/internal/jbig2/bitmap";_gd "github.com/ifanfairuz/unipdf/v3/internal/jbig2/errors";_c "io";);func (_gbb *Encoder )flush (){_gbb .setBits ();_gbb ._bc <<=_gbb ._gc ;
 _gbb .byteOut ();_gbb ._bc <<=_gbb ._gc ;_gbb .byteOut ();_gbb .emit ();if _gbb ._ag !=0xff{_gbb ._ef ++;_gbb ._ag =0xff;_gbb .emit ();};_gbb ._ef ++;_gbb ._ag =0xac;_gbb ._ef ++;_gbb .emit ();};func (_aag *Encoder )setBits (){_aff :=_aag ._bc +uint32 (_aag ._df );
 _aag ._bc |=0xffff;if _aag ._bc >=_aff {_aag ._bc -=0x8000;};};func (_egd *Encoder )Reset (){_egd ._df =0x8000;_egd ._bc =0;_egd ._gc =12;_egd ._ef =-1;_egd ._ag =0;_egd ._dg =nil ;_egd ._da =_fc (_agd );};const _cf =0x9b25;func (_cbb *Encoder )codeLPS (_bbe *codingContext ,_dfd uint32 ,_geec uint16 ,_gae byte ){_cbb ._df -=_geec ;
 if _cbb ._df < _geec {_cbb ._bc +=uint32 (_geec );}else {_cbb ._df =_geec ;};if _gcc [_gae ]._bcb ==1{_bbe .flipMps (_dfd );};_bbe ._gf [_dfd ]=_gcc [_gae ]._eebg ;_cbb .renormalize ();};func (_daa *Encoder )WriteTo (w _c .Writer )(int64 ,error ){const _cfg ="\u0045n\u0063o\u0064\u0065\u0072\u002e\u0057\u0072\u0069\u0074\u0065\u0054\u006f";
